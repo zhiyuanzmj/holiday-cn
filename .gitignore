@@ -1,6 +1,8 @@
 .cache
 .DS_Store
 .idea
+.nitro
+.output
 *.log
 *.tgz
 coverage
