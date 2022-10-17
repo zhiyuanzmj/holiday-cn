@@ -4,7 +4,7 @@ import type { Day } from '../src/api/holiday'
 
 describe('holiday type', () => {
   it('2022-10-01 is 1', async () => {
-    const data = await $fetch<Day>('http://localhost:2022/api/holiday', {
+    const data = await $fetch<Day>('http://localhost:3000/api/holiday', {
       params: {
         date: '2022-10-01',
       },
@@ -15,7 +15,7 @@ describe('holiday type', () => {
   })
 
   it('2022-10-08 is 2', async () => {
-    const data = await $fetch<any>('http://localhost:2022/api/holiday', {
+    const data = await $fetch<any>('http://localhost:3000/api/holiday', {
       params: {
         date: '2022-10-08',
       },
@@ -26,7 +26,7 @@ describe('holiday type', () => {
   })
 
   it('2022-10-10 is 3', async () => {
-    const data = await $fetch<any>('http://localhost:2022/api/holiday', {
+    const data = await $fetch<any>('http://localhost:3000/api/holiday', {
       params: {
         date: '2022-10-10',
       },
@@ -37,7 +37,7 @@ describe('holiday type', () => {
   })
 
   it('2022-10-15 is 0', async () => {
-    const data = await $fetch<any>('http://localhost:2022/api/holiday', {
+    const data = await $fetch<any>('http://localhost:3000/api/holiday', {
       params: {
         date: '2022-10-15',
       },

@@ -9,7 +9,6 @@ importers:
       '@antfu/utils': ^0.5.2
       '@types/node': ^18.7.18
       bumpp: ^8.2.1
-      cross-env: ^7.0.3
       dayjs: ^1.11.5
       eslint: ^8.23.1
       esno: ^0.16.3
@@ -33,7 +32,6 @@ importers:
       '@antfu/utils': 0.5.2
       '@types/node': 18.7.18
       bumpp: 8.2.1
-      cross-env: 7.0.3
       eslint: 8.23.1
       esno: 0.16.3
       pnpm: 7.12.0
@@ -1301,14 +1299,6 @@ packages:
       crc-32: 1.2.2
       readable-stream: 3.6.0
     dev: false
-
-  /cross-env/7.0.3:
-    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==}
-    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
-    hasBin: true
-    dependencies:
-      cross-spawn: 7.0.3
-    dev: true
 
   /cross-spawn/7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}

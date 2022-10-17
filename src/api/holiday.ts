@@ -1,4 +1,5 @@
 import dayjs from 'dayjs'
+import { $fetch } from 'ohmyfetch'
 export interface Day {
   type: 0 | 1 | 2 | 3
   name: string
@@ -12,7 +13,7 @@ export default eventHandler(async (event) => {
   const date = day.format('YYYY-MM-DD')
   const isWeekend = [6, 0].includes(day.day())
 
-  const data = await $fetch<{ days: Day[] }>(`http://localhost:${process.env.PORT}/${day.format('YYYY')}.json`)
+  const data = await $fetch<{ days: Day[] }>(`http://localhost:3000/${day.format('YYYY')}.json`)
   function getList(d?: Day) {
     return {
       type: d
