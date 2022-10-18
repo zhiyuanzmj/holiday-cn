@@ -27,10 +27,10 @@ export default eventHandler(async (event) => {
   function getList(d?: Day) {
     return {
       type: d
-        ? d.isOffDay ? 1 : 2
-        : isWeekend ? 0 : 3,
+        ? d.isOffDay ? 1 : 3
+        : isWeekend ? 2 : 0,
       name: d
-        ? d.isOffDay ? d.name : `${d.name}工作日`
+        ? d.isOffDay ? d.name : `${d.name}调休`
         : isWeekend ? '休息日' : '工作日',
       isOffDay: d
         ? d.isOffDay
