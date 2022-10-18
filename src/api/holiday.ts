@@ -1,7 +1,9 @@
 import dayjs from 'dayjs'
 import { $fetch } from 'ohmyfetch'
+import list from '../data'
+
 export interface Day {
-  type: 0 | 1 | 2 | 3
+  type?: 0 | 1 | 2 | 3
   name: string
   date: string
   isOffDay: boolean
@@ -13,7 +15,15 @@ export default eventHandler(async (event) => {
   const date = day.format('YYYY-MM-DD')
   const isWeekend = [6, 0].includes(day.day())
 
-  const data = await $fetch<{ days: Day[] }>(`http://localhost:3000/${day.format('YYYY')}.json`)
+  let data = list[`_${day.format('YYYY')}` as '_2022']
+  if (!data?.days.length) {
+    data = await Promise.any([
+      $fetch(`https://cdn.jsdelivr.net/gh/NateScarlet/holiday-cn@master/${day.format('YYYY')}.json`, { responseType: 'json' }),
+      $fetch(`https://raw.githubusercontent.com/NateScarlet/holiday-cn/master/${day.format('YYYY')}.json`, { responseType: 'json' }),
+      $fetch(`https://ghproxy.com/https://raw.githubusercontent.com/NateScarlet/holiday-cn/master/${day.format('YYYY')}.json`, { responseType: 'json' }),
+    ])
+  }
+
   function getList(d?: Day) {
     return {
       type: d
