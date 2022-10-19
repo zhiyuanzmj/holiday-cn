@@ -1,16 +1,16 @@
 # holiday-cn
 
 ## 中国节假日API
-数据源使用了 https://github.com/NateScarlet/holiday-cn 每年11月份更新下一年的节假日数据。
+数据源来自于 https://github.com/NateScarlet/holiday-cn 每年11月份更新下一年的节假日数据。
 
 ## 使用方式
 https://holiday-cn.netlify.app/api/holiday?date=2022-10-01
 ### 参数:
 - date: 日期查询
-  - [?date=2022-10-01](https://holiday-cn.netlify.app/api/holiday?date=2022-10-01): 可以使用任何可以被 `new Date` 解析的日期格式
-  - [?date=2022-10-01,2022-10-07](https://holiday-cn.netlify.app/api/holiday?date=2022-10-01,2022-10-07)
-  - [?date=2022-10-01&date=2022-10-10](https://holiday-cn.netlify.app/api/holiday?date=2022-10-01&date=2022-10-10): 数组批量查询
-  - [不传](https://holiday-cn.netlify.app/api/holiday): 则默认返回今年所有的节假日列表
+  - [date=2022-10-01](https://holiday-cn.netlify.app/api/holiday?date=2022-10-01): 可以使用任何可以被 `new Date` 解析的日期格式
+  - [date=2022-10-01,2022-10-07](https://holiday-cn.netlify.app/api/holiday?date=2022-10-01,2022-10-07)
+  - [date=2022-10-01&date=2022-10-10](https://holiday-cn.netlify.app/api/holiday?date=2022-10-01&date=2022-10-10): 数组批量查询
+  - [空](https://holiday-cn.netlify.app/api/holiday): 默认返回今年所有的节假日列表
 
 ### 返回值:
 ``` json
@@ -32,7 +32,25 @@ https://holiday-cn.netlify.app/api/holiday?date=2022-10-01
   - `true`: 双休日或节假日
   - `false`: 工作日或节假日调休
 
+## 初始化
+推荐使用 [pnpm](https://github.com/pnpm/pnpm) 来进行包管理，如果没有安装pnpm, 请先运行: `npm install -g pnpm`
 
+``` sh
+git clone zhiyuanzmj/holiday-cn
+cd holiday-cn
+pnpm i
+```
+
+### 开发
+``` sh
+pnpm dev
+```
+浏览器访问: http://localhost:3000/api/holiday
+
+### 发布
+``` sh
+pnpm build
+```
 
 ## Sponsors
 
