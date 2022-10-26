@@ -6,7 +6,7 @@ importers:
     specifiers:
       '@antfu/eslint-config': 0.27.0
       '@antfu/ni': 0.18.2
-      '@antfu/utils': 0.5.2
+      '@antfu/utils': 0.6.0
       '@types/node': 18.11.5
       bumpp: 8.2.1
       dayjs: ^1.11.5
@@ -29,7 +29,7 @@ importers:
     devDependencies:
       '@antfu/eslint-config': 0.27.0_wyqvi574yv7oiwfeinomdzmc3m
       '@antfu/ni': 0.18.2
-      '@antfu/utils': 0.5.2
+      '@antfu/utils': 0.6.0
       '@types/node': 18.11.5
       bumpp: 8.2.1
       eslint: 8.26.0
@@ -141,8 +141,8 @@ packages:
     hasBin: true
     dev: true
 
-  /@antfu/utils/0.5.2:
-    resolution: {integrity: sha512-CQkeV+oJxUazwjlHD0/3ZD08QWKuGQkhnrKo3e6ly5pd48VUpXbb77q0xMU4+vc2CkJnDS02Eq/M9ugyX20XZA==}
+  /@antfu/utils/0.6.0:
+    resolution: {integrity: sha512-VauUKmo22NYo3y6fIjGjVU7LJyhaedYL9kyabdvIIIl7P+qbNPbQiaLwwk4UOU4McFfA2eg+aIWpEYhkHzsE9Q==}
     dev: true
 
   /@babel/code-frame/7.18.6:
