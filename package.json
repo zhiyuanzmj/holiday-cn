@@ -63,7 +63,7 @@
   "dependencies": {
     "dayjs": "^1.11.5",
     "h3": "^0.8.1",
-    "nitropack": "^0.5.4",
+    "nitropack": "^0.6.0",
     "ohmyfetch": "^0.4.19"
   }
 }
