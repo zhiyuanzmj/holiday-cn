@@ -1,14 +1,14 @@
 # holiday-cn
 
 ## 中国节假日API
-数据源来自于 https://github.com/NateScarlet/holiday-cn 每年11月份更新下一年的节假日数据。
+数据来源于 https://github.com/NateScarlet/holiday-cn 每年年底更新下一年的节假日数据。
 
 ## 使用方式
 https://holiday-cn.netlify.app/api/holiday?date=2022-10-01
 ### 参数:
 - date: 日期查询
   - [date=2022-10-01](https://holiday-cn.netlify.app/api/holiday?date=2022-10-01): 可以使用任何可以被 `new Date` 解析的日期格式
-  - [date=2022-10-01,2022-10-07](https://holiday-cn.netlify.app/api/holiday?date=2022-10-01,2022-10-07)
+  - [date=2022-10-01,2022-10-07](https://holiday-cn.netlify.app/api/holiday?date=2022-10-01,2022-10-07): 查询时间段
   - [date=2022-10-01&date=2022-10-10](https://holiday-cn.netlify.app/api/holiday?date=2022-10-01&date=2022-10-10): 数组批量查询
   - [空](https://holiday-cn.netlify.app/api/holiday): 默认返回今年所有的节假日列表
 
