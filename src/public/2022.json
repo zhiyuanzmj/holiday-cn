@@ -195,6 +195,11 @@
             "name": "国庆节",
             "date": "2022-10-09",
             "isOffDay": false
+        },
+        {
+            "name": "元旦",
+            "date": "2022-12-31",
+            "isOffDay": true
         }
     ]
 }
