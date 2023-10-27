@@ -15,6 +15,7 @@ import _2020 from './public/2020.json'
 import _2021 from './public/2021.json'
 import _2022 from './public/2022.json'
 import _2023 from './public/2023.json'
+import _2024 from './public/2024.json'
 
 export default {
   _2007,
@@ -34,5 +35,6 @@ export default {
   _2021,
   _2022,
   _2023,
+  _2024,
 }
 
