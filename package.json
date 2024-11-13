@@ -45,6 +45,12 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "dayjs": "^1.11.5",
+    "h3": "^0.8.1",
+    "nitropack": "^0.5.4",
+    "ohmyfetch": "^0.4.19"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.27.0",
     "@antfu/ni": "^0.18.0",
@@ -59,11 +65,5 @@
     "unbuild": "^0.8.11",
     "vite": "^3.1.2",
     "vitest": "^0.23.4"
-  },
-  "dependencies": {
-    "dayjs": "^1.11.5",
-    "h3": "^0.8.1",
-    "nitropack": "^0.5.4",
-    "ohmyfetch": "^0.4.19"
   }
 }
